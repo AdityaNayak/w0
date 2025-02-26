@@ -1,0 +1,15 @@
+User-agent: *
+Disallow: /ofcakn_pub.asc
+Noindex: /ofcakn_pub.asc
+
+# Prevent email harvesting
+User-agent: *
+Disallow: /*@*
+Disallow: /*office@adityanayak.com*
+
+# Specific directives for email harvesters
+User-agent: EmailCollector
+User-agent: EmailSiphon
+User-agent: EmailWolf
+User-agent: ExtractorPro
+Disallow: /
