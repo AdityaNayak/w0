@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Office of Aditya Kumar N</title>
+  
+  <style>
+    @font-face {
+      font-family: 'Gilroy';
+      src: url('/fonts/GilroyLight/font.woff2') format('woff2'),
+           url('/fonts/GilroyLight/font.woff') format('woff');
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+    
+    @font-face {
+      font-family: 'Gilroy';
+      src: url('/fonts/GilroyExtraBold/font.woff2') format('woff2'),
+           url('/fonts/GilroyExtraBold/font.woff') format('woff');
+      font-weight: 800;
+      font-style: normal;
+      font-display: swap;
+    }
+    
+    /* Poppins as backup */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+    
+    :root {
+      --text-gray-900: #1a1a1a;
+      --text-gray-600: #666666;
+      --text-blue-600: #2563eb;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    html {
+      font-family: 'Gilroy', 'Poppins', sans-serif;
+    }
+    
+    body {
+      background-color: white;
+      color: var(--text-gray-900);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem;
+    }
+    
+    main {
+      max-width: 32rem;
+      width: 100%;
+      padding: 0 1rem;
+    }
+    
+    .space-y-16 {
+      display: flex;
+      flex-direction: column;
+      gap: 8rem;
+    }
+    
+    .space-y-2 {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    header p {
+      font-size: 1.125rem;
+      color: var(--text-gray-600);
+      font-weight: 300;
+    }
+    
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      line-height: 1;
+    }
+    
+    section a {
+      font-size: 1.25rem;
+      text-decoration: none;
+      color: var(--text-gray-900);
+      font-weight: 300;
+    }
+    
+    section a:hover {
+      text-decoration: underline;
+    }
+    
+    footer {
+      display: flex;
+      align-items: center;
+      color: var(--text-gray-600);
+      font-weight: 300;
+    }
+    
+    footer p {
+      margin-right: 0.5rem;
+    }
+    
+    footer a {
+      display: inline-flex;
+      align-items: center;
+      color: var(--text-blue-600);
+      text-decoration: none;
+    }
+    
+    footer a:hover {
+      text-decoration: underline;
+    }
+    
+    .external-link-icon {
+      margin-left: 0.25rem;
+      height: 0.875rem;
+      width: 0.875rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="space-y-16">
+      <header class="space-y-2">
+        <p>office of</p>
+        <h1>aditya kumar n</h1>
+      </header>
+      
+      <section>
+        <a href="mailto:office@adityanayak.com">office@adityanayak.com</a>
+      </section>
+      
+      <footer>
+        <p>emails are PGP signed:</p>
+        <a href="/ofcakn_pub.asc">
+          public key
+          <svg xmlns="http://www.w3.org/2000/svg" class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </a>
+      </footer>
+    </div>
+  </main>
+</body>
+</html>
